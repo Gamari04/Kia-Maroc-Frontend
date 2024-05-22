@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+.links{
+    font-size:  16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+.card_techno{
+    overflow: hidden;
+    
+}
+.service_card{
+    overflow: hidden;
+    
+}
+.swiper{
+   
+    height: 496px;
+  }
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    background-color: #00000080;
+    padding: 30px;
+    display: flex;
+    height: 96px;
+    
+    width: 66px;
+    color: #fff;
+}
+.point{
+    position: relative;
+  }
+  
+  .point::before {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 10px;
+    left: -20px;
+
+    position: absolute;
+    top: 6px;
+    width: 10px;
+    background-color: red;
+  }
+  .point-Dark{
+    position: relative;
+  }
+  
+  .point-Dark::before {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 10px;
+    left: -20px;
+
+    position: absolute;
+    top: 6px;
+    width: 10px;
+    background-color: rgb(12, 12, 12);
+  }
+  .menu{
+    display: none;  position: absolute;
+          right: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+     .boton{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .elementToggle{
+        display: none;
+    }
+    .techno, .satisfaction{
+       
+        flex-wrap: wrap;
+    }
+    .hero-disc-1{
+        left: 0px;
+        bottom: -70px;
+        right: 100px;
+        padding: 6px;
+        
+    }
+    .links{
+        top: 0;
+        left: 0;
+        display: block;
+        position: absolute;
+        background-color: rgba(11, 5, 5, 0.478);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .links.mobile-menu {
+        margin-left: 0;
+    }
+    .texto{
+        font-size: 50px;
+    }
+    .texto-2{
+        font-size: 30px;
+    }
+   .actualite{
+    width: 380px;
+    height: 293px;
+    margin-bottom: 40px;
+   }
+   .hero-cover{
+    width: 400px;
+    height: 900px;
+    flex-wrap: wrap;
+   }
+   .container-mobile{
+    width: 400px !important;
+   }
+   .video{
+    height: 400px;
+   }
+    
+  }
