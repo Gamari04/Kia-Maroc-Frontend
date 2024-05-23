@@ -7,6 +7,7 @@
     text-decoration: none;
 
 }
+
 .zoom-container {
     overflow: hidden;
   }
@@ -27,15 +28,26 @@
    
     height: 496px;
   }
-.swiper-button-next:after,
-.swiper-button-prev:after{
+
+.swiper-button-next:after{
     background-color: #00000080;
-    padding: 30px;
+    padding: 20px;
     display: flex;
-    height: 96px;
-    
+   
+    justify-content: center;
     width: 66px;
     color: #fff;
+    margin-right: 120px;
+}
+.swiper-button-prev:after{
+    background-color: #00000080;
+    padding: 20px;
+    display: flex;
+    margin-left: 120px;
+    justify-content: center;
+    width: 66px;
+    color: #fff;
+    
 }
 .point{
     position: relative;

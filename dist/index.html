@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kia-Maroc</title>
-    <link rel="icon" type="image/x-icon" href="../assets/logokia.svg">
+    <link rel="icon" type="image/x-icon" href="../assets/logokia.svg" />
     <link rel="stylesheet" href="../src/output.css" />
     <link rel="stylesheet" href="../src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -29,315 +33,380 @@
       rel="stylesheet"
     />
   </head>
+  <style>
+    .hero-section {
+      overflow: hidden;
+    }
+    .hero-cover {
+      position: relative;
+    }
+    .hero-cover::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(
+        to top,
+        rgba(2, 7, 19, 0.64),
+        rgba(5, 20, 31, 0)
+      );
+    }
+  </style>
   <body>
-    <section class="relative container-mobile">
-      
-
-<!-- Slider main container -->
-<div class="w-full swiper2">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class=" swiper-slide">
-      <div
-      class="bg-[url('../assets/hero.jpg')] bg-no-repeat h-[100vh] bg-cover hero-cover  "
+    <section
+      class="relative container-mobile hero-section wow"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
     >
-      <nav class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b ">
-        <div
-          class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 j font-semibold text-[15px] links"
-        >
-          <li><a href="../dist/product.html">Modèles</a></li>
-          <li><a href="">Acheter une kia</a></li>
-          <li><a href="">Offres</a></li>
-          <li><a href="">Occasion</a></li>
-        </div>
-        <div class="mr-4 logo">
-          <a href="/dist/index.html">
-            <img src="/assets/logoKia.svg" alt="" />
-          </a>
-        </div>
-        <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
-          <a href="">
-            <span>
-              <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
-            </span>
-          </a>
-          <span class="border-white inline-block h-[24px] border-l"></span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+      <!-- Slider main container -->
+      <div class="w-full swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="w-full swiper-slide">
+            <div
+              class="bg-[url('../assets/hero.jpg')] bg-no-repeat h-[100vh] bg-cover hero-cover"
             >
-              <i class="mr-2 fas fa-map-marker-alt" style="color: #fafafa">
-              </i>
-              Nos showrooms
-            </a>
-          </span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-            >
-              <img src="../assets/serviceicone.svg" class="mr-2" alt="" />
-              Services
-            </a>
-          </span>
-          <a
-            href=""
-            class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-          >
-            <button class="p-2 border">
-              <span class="">
-                <i
-                  class="mr-1 text-xl fas fa-cog text-2lg"
-                  style="color: #ffffff"
-                ></i>
-                Configurateur
-              </span>
-            </button>
-          </a>
-        </div>
-        <span class="menu">
-          <i class="fas fa-bars text-[30px]" style="color: white"></i>
-        </span>
-      </nav>
-      <div class="container">
-        <div class="absolute bottom-40 left-[100px] hero-disc">
-          <span class="text-[18px] text-slate-50 font-light"
-            >Lorem ipsum</span
-          >
-          <h1 class="text-[52px] text-slate-50 font-medium texto">
-            Le tout nouveau Sportage
-          </h1>
-          <span class="text-[28px] text-slate-50 font-light texto-2"
-            >Branchez-vous à la nouvelle ère de l’électrique</span
-          >
-        </div>
-        <div>
-          <div
-            class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px]"
-          >
-            <a href=""> En savoir plus </a>
+              <nav
+                class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b"
+              >
+                <div
+                  class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 font-semibold text-[15px]"
+                >
+                  <li class="hover:text-slate-300">
+                    <a href="../dist/product.html">Modèles</a>
+                  </li>
+                  <li class="hover:text-slate-300">
+                    <a href="">Acheter une kia</a>
+                  </li>
+                  <li class="hover:text-slate-300"><a href="">Offres</a></li>
+                  <li class="hover:text-slate-300"><a href="">Occasion</a></li>
+                </div>
+                <div class="mr-4 logo">
+                  <a href="/dist/index.html">
+                    <img src="/assets/logoKia.svg" alt="" />
+                  </a>
+                </div>
+                <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
+                  <a href="">
+                    <span>
+                      <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
+                    </span>
+                  </a>
+                  <span
+                    class="border-white inline-block h-[24px] border-l"
+                  ></span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50 hover:text-slate-300"
+                    >
+                      <i
+                        class="mr-2 fas fa-map-marker-alt"
+                        style="color: #fafafa"
+                      ></i>
+                      Nos showrooms
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50 hover:text-slate-300"
+                    >
+                      <img
+                        src="../assets/serviceicone.svg"
+                        class="mr-2"
+                        alt=""
+                      />
+                      Services
+                    </a>
+                  </span>
+                  <a
+                    href=""
+                    class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                  >
+                    <button class="p-2 border">
+                      <span class="hover:text-slate-300">
+                        <i
+                          class="mr-1 text-xl fas fa-cog text-2lg"
+                          style="color: #ffffff"
+                        ></i>
+                        Configurateur
+                      </span>
+                    </button>
+                  </a>
+                </div>
+                <span class="menu">
+                  <i class="fas fa-bars text-[30px]" style="color: white"></i>
+                </span>
+              </nav>
+              <div class="container content">
+                <div
+                  class="absolute bottom-40 left-[100px] hero-disc animate__animated animate__fadeInLeft"
+                >
+                  <span class="text-[18px] text-slate-50 font-light"
+                    >Lorem ipsum</span
+                  >
+                  <h1 class="text-[52px] text-slate-50 font-medium">
+                    Le tout nouveau Sportage
+                  </h1>
+                  <span class="text-[28px] text-slate-50 font-light"
+                    >Branchez-vous à la nouvelle ère de l’électrique</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px] hover:text-slate-300"
+                  >
+                    <a href="">En savoir plus</a>
+                  </div>
+                  <a
+                    href=""
+                    class="flex static text-[15px] text-slate-50 hover:text-slate-300"
+                  >
+                    <button
+                      class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px]"
+                    >
+                      <span>Je profite de l’offre</span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="" class="flex static text-[15px] text-slate-50">
-            <button
-              class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px] hero-disc-1"
+          <div class="swiper-slide">
+            <div
+              class="bg-[url('../assets/cover2.png')] bg-no-repeat h-[100vh] bg-cover hero-cover"
             >
-              <span class=""> Je profite de l’offre </span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="swiper-slide">
-      <div
-      class="bg-[url('../assets/cover2.png')] bg-no-repeat h-[100vh] bg-cover hero-cover  "
-    >
-      <nav class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b ">
-        <div
-          class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 j font-semibold text-[15px] links"
-        >
-          <li><a href="../dist/product.html">Modèles</a></li>
-          <li><a href="">Acheter une kia</a></li>
-          <li><a href="">Offres</a></li>
-          <li><a href="">Occasion</a></li>
-        </div>
-        <div class="mr-4 logo">
-          <a href="/dist/index.html">
-            <img src="/assets/logoKia.svg" alt="" />
-          </a>
-        </div>
-        <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
-          <a href="">
-            <span>
-              <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
-            </span>
-          </a>
-          <span class="border-white inline-block h-[24px] border-l"></span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-            >
-              <i class="mr-2 fas fa-map-marker-alt" style="color: #fafafa">
-              </i>
-              Nos showrooms
-            </a>
-          </span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-            >
-              <img src="../assets/serviceicone.svg" class="mr-2" alt="" />
-              Services
-            </a>
-          </span>
-          <a
-            href=""
-            class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-          >
-            <button class="p-2 border">
-              <span class="">
-                <i
-                  class="mr-1 text-xl fas fa-cog text-2lg"
-                  style="color: #ffffff"
-                ></i>
-                Configurateur
-              </span>
-            </button>
-          </a>
-        </div>
-        <span class="menu">
-          <i class="fas fa-bars text-[30px]" style="color: white"></i>
-        </span>
-      </nav>
-      <div class="container">
-        <div class="absolute bottom-40 left-[100px] hero-disc">
-          <span class="text-[18px] text-slate-50 font-light"
-            >Lorem ipsum</span
-          >
-          <h1 class="text-[52px] text-slate-50 font-medium texto">
-            Le tout nouveau Sportage
-          </h1>
-          <span class="text-[28px] text-slate-50 font-light texto-2"
-            >Branchez-vous à la nouvelle ère de l’électrique</span
-          >
-        </div>
-        <div>
-          <div
-            class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px]"
-          >
-            <a href=""> En savoir plus </a>
+              <nav
+                class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b"
+              >
+                <div
+                  class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 j font-semibold text-[15px] links"
+                >
+                  <li><a href="../dist/product.html">Modèles</a></li>
+                  <li><a href="">Acheter une kia</a></li>
+                  <li><a href="">Offres</a></li>
+                  <li><a href="">Occasion</a></li>
+                </div>
+                <div class="mr-4 logo">
+                  <a href="/dist/index.html">
+                    <img src="/assets/logoKia.svg" alt="" />
+                  </a>
+                </div>
+                <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
+                  <a href="">
+                    <span>
+                      <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
+                    </span>
+                  </a>
+                  <span
+                    class="border-white inline-block h-[24px] border-l"
+                  ></span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                    >
+                      <i
+                        class="mr-2 fas fa-map-marker-alt"
+                        style="color: #fafafa"
+                      >
+                      </i>
+                      Nos showrooms
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                    >
+                      <img
+                        src="../assets/serviceicone.svg"
+                        class="mr-2"
+                        alt=""
+                      />
+                      Services
+                    </a>
+                  </span>
+                  <a
+                    href=""
+                    class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                  >
+                    <button class="p-2 border">
+                      <span class="">
+                        <i
+                          class="mr-1 text-xl fas fa-cog text-2lg"
+                          style="color: #ffffff"
+                        ></i>
+                        Configurateur
+                      </span>
+                    </button>
+                  </a>
+                </div>
+                <span class="menu">
+                  <i class="fas fa-bars text-[30px]" style="color: white"></i>
+                </span>
+              </nav>
+              <div class="container">
+                <div class="absolute bottom-40 left-[100px] hero-disc">
+                  <span class="text-[18px] text-slate-50 font-light"
+                    >Lorem ipsum</span
+                  >
+                  <h1 class="text-[52px] text-slate-50 font-medium texto">
+                    Le tout nouveau Sportage
+                  </h1>
+                  <span class="text-[28px] text-slate-50 font-light texto-2"
+                    >Branchez-vous à la nouvelle ère de l’électrique</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px]"
+                  >
+                    <a href=""> En savoir plus </a>
+                  </div>
+                  <a href="" class="flex static text-[15px] text-slate-50">
+                    <button
+                      class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px] hero-disc-1"
+                    >
+                      <span class=""> Je profite de l’offre </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="" class="flex static text-[15px] text-slate-50">
-            <button
-              class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px] hero-disc-1"
+          <div class="swiper-slide">
+            <div
+              class="bg-[url('../assets/hero.jpg')] bg-no-repeat h-[100vh] bg-cover hero-cover"
             >
-              <span class=""> Je profite de l’offre </span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="swiper-slide">
-      <div
-      class="bg-[url('../assets/hero.jpg')] bg-no-repeat h-[100vh] bg-cover hero-cover  "
-    >
-      <nav class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b ">
-        <div
-          class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 j font-semibold text-[15px] links"
-        >
-          <li><a href="../dist/product.html">Modèles</a></li>
-          <li><a href="">Acheter une kia</a></li>
-          <li><a href="">Offres</a></li>
-          <li><a href="">Occasion</a></li>
-        </div>
-        <div class="mr-4 logo">
-          <a href="/dist/index.html">
-            <img src="/assets/logoKia.svg" alt="" />
-          </a>
-        </div>
-        <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
-          <a href="">
-            <span>
-              <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
-            </span>
-          </a>
-          <span class="border-white inline-block h-[24px] border-l"></span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-            >
-              <i class="mr-2 fas fa-map-marker-alt" style="color: #fafafa">
-              </i>
-              Nos showrooms
-            </a>
-          </span>
-          <span>
-            <a
-              href=""
-              class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-            >
-              <img src="../assets/serviceicone.svg" class="mr-2" alt="" />
-              Services
-            </a>
-          </span>
-          <a
-            href=""
-            class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
-          >
-            <button class="p-2 border">
-              <span class="">
-                <i
-                  class="mr-1 text-xl fas fa-cog text-2lg"
-                  style="color: #ffffff"
-                ></i>
-                Configurateur
-              </span>
-            </button>
-          </a>
-        </div>
-        <span class="menu">
-          <i class="fas fa-bars text-[30px]" style="color: white"></i>
-        </span>
-      </nav>
-      <div class="container">
-        <div class="absolute bottom-40 left-[100px] hero-disc">
-          <span class="text-[18px] text-slate-50 font-light"
-            >Lorem ipsum</span
-          >
-          <h1 class="text-[52px] text-slate-50 font-medium texto">
-            Le tout nouveau Sportage
-          </h1>
-          <span class="text-[28px] text-slate-50 font-light texto-2"
-            >Branchez-vous à la nouvelle ère de l’électrique</span
-          >
-        </div>
-        <div>
-          <div
-            class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px]"
-          >
-            <a href=""> En savoir plus </a>
+              <nav
+                class="fixed flex items-center w-full p-4 bg-black bg-opacity-50 border-b"
+              >
+                <div
+                  class="flex items-center gap-[60px] w-1/2 justify-center text-slate-50 j font-semibold text-[15px] links"
+                >
+                  <li><a href="../dist/product.html">Modèles</a></li>
+                  <li><a href="">Acheter une kia</a></li>
+                  <li><a href="">Offres</a></li>
+                  <li><a href="">Occasion</a></li>
+                </div>
+                <div class="mr-4 logo">
+                  <a href="/dist/index.html">
+                    <img src="/assets/logoKia.svg" alt="" />
+                  </a>
+                </div>
+                <div class="flex items-center gap-[40px] w-1/2 px-16 boton">
+                  <a href="">
+                    <span>
+                      <i class="text-2xl gg-search" style="color: #fcfcfd"></i>
+                    </span>
+                  </a>
+                  <span
+                    class="border-white inline-block h-[24px] border-l"
+                  ></span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                    >
+                      <i
+                        class="mr-2 fas fa-map-marker-alt"
+                        style="color: #fafafa"
+                      >
+                      </i>
+                      Nos showrooms
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      href=""
+                      class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                    >
+                      <img
+                        src="../assets/serviceicone.svg"
+                        class="mr-2"
+                        alt=""
+                      />
+                      Services
+                    </a>
+                  </span>
+                  <a
+                    href=""
+                    class="flex justify-center items-center font-semibold static text-[15px] text-slate-50"
+                  >
+                    <button class="p-2 border">
+                      <span class="">
+                        <i
+                          class="mr-1 text-xl fas fa-cog text-2lg"
+                          style="color: #ffffff"
+                        ></i>
+                        Configurateur
+                      </span>
+                    </button>
+                  </a>
+                </div>
+                <span class="menu">
+                  <i class="fas fa-bars text-[30px]" style="color: white"></i>
+                </span>
+              </nav>
+              <div class="container">
+                <div class="absolute bottom-40 left-[100px] hero-disc">
+                  <span class="text-[18px] text-slate-50 font-light"
+                    >Lorem ipsum</span
+                  >
+                  <h1 class="text-[52px] text-slate-50 font-medium texto">
+                    Le tout nouveau Sportage
+                  </h1>
+                  <span class="text-[28px] text-slate-50 font-light texto-2"
+                    >Branchez-vous à la nouvelle ère de l’électrique</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="absolute bottom-0 px-8 py-4 mb-20 text-center text-white bg-black bg-opacity-50 left-[100px]"
+                  >
+                    <a href=""> En savoir plus </a>
+                  </div>
+                  <a href="" class="flex static text-[15px] text-slate-50">
+                    <button
+                      class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px] hero-disc-1"
+                    >
+                      <span class=""> Je profite de l’offre </span>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="" class="flex static text-[15px] text-slate-50">
-            <button
-              class="absolute bottom-0 px-8 py-4 mb-20 ml-14 text-center border shadow-2xl left-[260px] hero-disc-1"
-            >
-              <span class=""> Je profite de l’offre </span>
-            </button>
-          </a>
         </div>
-      </div>
-    </div>
-    </div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="container">
-  <div class="swiper-button-prev "></div>
-  <div class="swiper-button-next"></div>
-</div>
-  <!-- If we need scrollbar -->
- 
-</div>
-
-      
-    
+        <!-- If we need navigation buttons -->
+        <div class="container">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- If we need scrollbar -->
+      </div>
     </section>
     <div
-      class="container flex  justify-center max-[700px]:flex-col pt-6 container-mobile"
+      class="container flex justify-center max-[700px]:flex-col pt-6 container-mobile wow animate__fadeInUp animate__animated"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
     >
       <div
         class="bg-[url('../assets/card_bg.jpg')] bg-cover w-full p-[2rem] flex flex-col justify-between h-[406px]"
       >
-        <div class="flex flex-col pl-10">
+        <div class="relative flex flex-col pl-10">
+          <div
+            class="absolute w-20 h-20 rotate-45 bg-white bottom-[-86px] left-[-73px]"
+          ></div>
+
           <h1 class="text-[52px] text-slate-50 font-medium leading-[57.2px]">
             <span class="text-[18px] text-slate-50 font-light"
               >Citadines, Berlines, Suv et Monospaces</span
@@ -400,7 +469,11 @@
         </div>
       </div>
     </div>
-    <div class="pt-[5rem] container-mobile">
+    <div
+      class="pt-[5rem] container-mobile wow fadeInUp animate__fadeInUp animate__animated"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <p class="text-[18px] font-light text-center">
         Citadines, Berlines, Suv et Monospaces
       </p>
@@ -410,7 +483,9 @@
         Nos offres spéciales
       </p>
       <div class="relative">
-        <div class="bg-[url('../assets/offre.jpg')] bg-no-repeat h-[100vh] bg-cover">
+        <div
+          class="bg-[url('../assets/offre.jpg')] bg-no-repeat h-[100vh] bg-cover"
+        >
           <div class="container">
             <div class="absolute bottom-14 left-4 sm:left-[100px]">
               <span class="text-[14px] sm:text-[18px] text-slate-50 font-light">
@@ -423,15 +498,21 @@
                 Branchez-vous à la nouvelle ère de l’électrique
               </span>
             </div>
-            <div class="absolute bottom-14 px-4 py-2 sm:px-8 sm:py-4 text-center text-black bg-white right-4 sm:right-[100px]">
+            <div
+              class="absolute bottom-14 px-4 py-2 sm:px-8 sm:py-4 text-center text-black bg-white right-4 sm:right-[100px] hover:bg-black hover:text-white"
+            >
               <a href="">Profiter de l’offre</a>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-    <div class="py-[5rem] container-mobile" style="background-color: #05141f1a">
+    <div
+      class="py-[5rem] container-mobile wow fadeInUp animate__fadeInUp animate__animated"
+      style="background-color: #05141f1a"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <p class="text-[18px] font-light text-center">Nos technologies KIA</p>
       <p
         class="text-primary text-center text-[32px] md:text-[42px] font-bold mb-[40px]"
@@ -440,7 +521,7 @@
       </p>
       <div class="flex gap-[32px] container mx-auto techno">
         <div class="">
-          <div class="card_techno ">
+          <div class="card_techno">
             <img
               src="../assets/techno1.jpg"
               alt=""
@@ -452,8 +533,12 @@
               consequat fermentum molestie feugiat nibh.
             </p>
             <br />
-            <button class="px-8 py-4 ml-2 text-center text-white bg-black">
-              <a href=""> En savoir plus </a>
+            <button
+              class="px-8 py-4 ml-2 text-center text-white bg-black hover:bg-slate-50"
+            >
+              <a href="" class="hover:bg-white hover:text-black">
+                En savoir plus
+              </a>
             </button>
           </div>
         </div>
@@ -470,8 +555,10 @@
               consequat fermentum molestie feugiat nibh.
             </p>
             <br />
-            <button class="px-8 py-4 ml-2 text-center text-white bg-black">
-              <a href=""> En savoir plus </a>
+            <button
+              class="px-8 py-4 ml-2 text-center text-white bg-black hover:bg-white hover:text-black"
+            >
+              <a href="" class=""> En savoir plus </a>
             </button>
           </div>
         </div>
@@ -488,8 +575,10 @@
               consequat fermentum molestie feugiat nibh.
             </p>
             <br />
-            <button class="px-8 py-4 ml-2 text-center text-white bg-black">
-              <a href=""> En savoir plus </a>
+            <button
+              class="px-8 py-4 ml-2 text-center text-white bg-black hover:bg-white hover:text-black"
+            >
+              <a href="" class=""> En savoir plus </a>
             </button>
           </div>
         </div>
@@ -497,18 +586,24 @@
     </div>
 
     <div
-      class="bg-[url('../assets/kia.png')] bg-cover w-full p-[5rem] h-[442px] container-mobile"
+      class="bg-[url('../assets/kia.png')] bg-cover w-full p-[5rem] h-[442px] container-mobile bg-fixed"
     >
       <h1 class="text-[42px] font-semibold text-white m-10">Découvrir Kia</h1>
       <p class="text-[20px] text-white font-light px-10">
         Avec la nouvelle Kia, nous irons au-delà d'être un constructeur
         <br />automobile traditionnel, pour devenir une marque de mobilité.
       </p>
-      <button class="px-8 py-4 m-10 text-center bg-white">
-        <a href=""> Découvrir Kia </a>
+      <button
+        class="px-8 py-4 m-10 text-center bg-white hover:bg-black hover:text-white"
+      >
+        <a href="" class="hover:text-white"> Découvrir Kia </a>
       </button>
     </div>
-    <div class="py-[5rem] container-mobile">
+    <div
+      class="py-[5rem] container-mobile wow animate__animated animate__fadeInUp"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <p class="text-[18px] font-light text-center">Nos services Kia</p>
       <p
         class="text-primary text-center text-[32px] md:text-[42px] font-bold mb-[40px]"
@@ -534,7 +629,9 @@
                 Lorem ipsum dolor sit amet consectetur. Risus ut <br />
                 integer nunc vitae sit vitae.
               </p>
-              <button class="px-8 py-4 mt-2 text-center text-white bg-black">
+              <button
+                class="px-8 py-4 mt-2 text-center text-white bg-black hover:bg-white hover:text-black"
+              >
                 <a href="">
                   <span class="">
                     Découvrir
@@ -559,7 +656,9 @@
                 Lorem ipsum dolor sit amet consectetur. Risus ut <br />
                 integer nunc vitae sit vitae.
               </p>
-              <button class="px-8 py-4 mt-2 text-center text-white bg-black">
+              <button
+                class="px-8 py-4 mt-2 text-center text-white bg-black hover:bg-white hover:text-black"
+              >
                 <a href="">
                   <span>
                     Découvrir
@@ -584,7 +683,9 @@
                 Lorem ipsum dolor sit amet consectetur. Risus ut <br />
                 integer nunc vitae sit vitae.
               </p>
-              <button class="px-8 py-4 mt-2 text-center text-white bg-black">
+              <button
+                class="px-8 py-4 mt-2 text-center text-white bg-black hover:bg-white hover:text-black"
+              >
                 <a href="">
                   <span>
                     Découvrir
@@ -609,7 +710,9 @@
                 Lorem ipsum dolor sit amet consectetur. Risus ut <br />
                 integer nunc vitae sit vitae.
               </p>
-              <button class="px-8 py-4 mt-2 text-center text-white bg-black">
+              <button
+                class="px-8 py-4 mt-2 text-center text-white bg-black hover:bg-white hover:text-black"
+              >
                 <a href="">
                   <span>
                     Découvrir
@@ -634,7 +737,9 @@
                 Lorem ipsum dolor sit amet consectetur. Risus ut <br />
                 integer nunc vitae sit vitae.
               </p>
-              <button class="px-8 py-4 mt-2 text-center text-white bg-black">
+              <button
+                class="px-8 py-4 mt-2 text-center text-white bg-black hover:bg-white hover:text-black"
+              >
                 <a href="">
                   <span>
                     Découvrir
@@ -649,7 +754,6 @@
           </div>
           ...
         </div>
-      
 
         <!-- If we need navigation buttons -->
         <div class="ml-10 swiper-button-prev"></div>
@@ -733,7 +837,12 @@
         </div>
       </div>
     </div> -->
-    <div class="py-[5rem] container-mobile" style="background-color: #05141f1a">
+    <div
+      class="py-[5rem] container-mobile wow animate__animated animate__fadeInUp"
+      style="background-color: #05141f1a"
+      data-wow-duration="1s"
+      data-wow-delay="0.5s"
+    >
       <p class="text-[18px] font-light text-center">Nos actualités Kia</p>
       <p
         class="text-primary text-center text-[32px] md:text-[42px] font-bold mb-[40px]"
@@ -744,8 +853,8 @@
         class="container lg:flex mx-auto justify-center max-[700px]:flex-col pt-6 gap-[10px]"
       >
         <div
-          class="w-[635px] p-8 flex flex-col justify-between h-[596px] actualite bg-actualite1 " ;
-          
+          class="w-[635px] p-8 flex flex-col justify-between h-[596px] actualite bg-actualite1"
+          ;
         >
           <div class="flex flex-col pl-10 text-white pt-[400px]">
             <h3 class="text-[30px] font-semibold">Lorem ipsum dolor</h3>
@@ -800,12 +909,18 @@
       </div>
       <br />
       <div class="flex justify-center m-5">
-        <button class="px-8 py-4 mx-auto text-center text-white bg-black">
-          <a href=""> <span> Découvrez toute notre actualité </span></a>
+        <button
+          class="px-8 py-4 mx-auto text-center text-white transition-colors duration-300 bg-black hover:bg-white hover:text-black"
+        >
+          <a href="">
+            <span class=""> Découvrez toute notre actualité </span></a
+          >
         </button>
       </div>
     </div>
-    <div class="bg-[#1F2C35] text-[#989EA2] text-[12px] font-normal py-[35px] container-mobile">
+    <div
+      class="bg-[#1F2C35] text-[#989EA2] text-[12px] font-normal py-[35px] container-mobile"
+    >
       <p class="px-28">
         (1) modèle présenté : Le Lorem Ipsum est simplement du faux texte
         employé dans la composition et la mise en page avant impression. Le
@@ -1093,6 +1208,13 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW({
+        offset: 100, // Déclencher l'animation lorsque l'élément entre à 100 pixels en dessous du haut de la fenêtre
+        mobile: false, // Désactiver les animations sur mobile
+      }).init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const menuHamburger = document.querySelector(".menu");
@@ -1100,7 +1222,7 @@
       const disc = document.querySelector(".hero-disc");
       const navLinks = document.querySelector(".links");
 
-        menuHamburger.addEventListener("click", () => {
+      menuHamburger.addEventListener("click", () => {
         navLinks.classList.toggle("mobile-menu");
         disc.classList.toggle("elementToggle");
       });
@@ -1149,7 +1271,6 @@
         },
       });
 
-
       const swiper2 = new Swiper(".swiper2", {
         // Optional parameters
 
@@ -1175,7 +1296,6 @@
         slidesPerView: 1,
         spaceBetween: 10,
         // Responsive breakpoints
-        
       });
     </script>
   </body>
