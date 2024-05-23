@@ -7,6 +7,9 @@
     text-decoration: none;
 
 }
+.zoom-container {
+    overflow: hidden;
+  }
 .links{
     font-size:  16px;
     font-weight: 500;
@@ -53,7 +56,42 @@
   .point-Dark{
     position: relative;
   }
-  
+
+  .actualite {
+    position: relative;
+    overflow: hidden;
+  }
+  .actualite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    z-index: 0;
+    filter: brightness(0.5); /* Apply a dark filter */
+  }
+  .actualite:hover::before {
+    transform: scale(1.05);
+  }
+  .actualite > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bg-actualite1::before {
+    background-image: url('../assets/actualite1.jpg');
+  }
+
+  .bg-actualite2::before {
+    background-image: url('../assets/actualite2.jpg');
+  }
+  .bg-actualite3::before {
+    background-image: url('../assets/actualite3.jpg');
+  }
   .point-Dark::before {
     border-radius: 50%;
     content: "";

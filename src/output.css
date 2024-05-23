@@ -580,15 +580,9 @@ video {
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1240px;
-  }
-}
-
-@media (min-width: 1496px) {
-  .container {
-    max-width: 1496px;
+    max-width: 1280px;
   }
 }
 
@@ -728,12 +722,24 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .h-\[15px\] {
@@ -784,14 +790,6 @@ video {
   height: 690px;
 }
 
-.h-\[899px\] {
-  height: 899px;
-}
-
-.h-\[900px\] {
-  height: 900px;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -799,14 +797,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
 }
 
 .w-1\/2 {
@@ -851,18 +841,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[100\] {
-  width: 100;
-}
-
-.w-\[100vh\] {
-  width: 100vh;
 }
 
 .max-w-fit {
@@ -1066,6 +1044,22 @@ video {
   background-image: url('../assets/offre.jpg');
 }
 
+.bg-\[url\(\'\.\.\/assets\/\/c\'\)\] {
+  background-image: url('../assets//c');
+}
+
+.bg-\[url\(\'\.\.\/assets\/\'\)\] {
+  background-image: url('../assets/');
+}
+
+.bg-\[url\(\'\.\.\/assets\/cover2\'\)\] {
+  background-image: url('../assets/cover2');
+}
+
+.bg-\[url\(\'\.\.\/assets\/cover2\.png\'\)\] {
+  background-image: url('../assets/cover2.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1097,6 +1091,10 @@ video {
 
 .p-\[5rem\] {
   padding: 5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-10 {
@@ -1292,6 +1290,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[3px\] {
+  font-size: 3px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1374,6 +1384,14 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[10\] {
+  color: 10;
 }
 
 .shadow-2xl {
@@ -1512,6 +1530,14 @@ video {
 
   .md\:text-\[42px\] {
     font-size: 42px;
+  }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[px\] {
+    color: px;
   }
 }
 
